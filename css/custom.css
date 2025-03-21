@@ -2,3 +2,34 @@
 body {
   background: rgba(255,0,0,0.1) !important;  /* 淡红色背景 */
 }
+
+/* 分类卡片样式 */
+.category-card {
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.category-card .header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.category-card .header i {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.article-list {
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+}
+
+.article-item {
+  margin: 10px 0;
+  padding: 10px;
+  background: rgba(255,255,255,0.8);
+  border-radius: 4px;
+}
