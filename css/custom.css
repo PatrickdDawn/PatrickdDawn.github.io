@@ -42,3 +42,66 @@ body {
     max-width: 100%;
   }
 }
+#search-page {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+#search-page #search-input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+}
+#search-page .search-item {
+  margin: 20px 0;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+#search-page .search-item:hover {
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+#search-page .search-item h3 a {
+  color: #2c3e50;
+  text-decoration: none;
+}
+#search-page .search-item p {
+  color: #666;
+  margin: 8px 0 0;
+}
+.tag-cloud {
+  margin: 20px 0;
+}
+.tag-cloud .tag-item {
+  display: inline-block;
+  padding: 5px 15px;
+  margin: 5px;
+  background: #f0f0f0;
+  border-radius: 15px;
+  transition: all 0.3s;
+}
+.tag-cloud .tag-item:hover {
+  background: #4a90e2;
+  color: #fff;
+}
+.post-item {
+  margin: 30px 0;
+}
+.post-item .date {
+  color: #666;
+  font-size: 0.9em;
+}
+.post-item .tags {
+  margin-top: 10px;
+}
+.post-item .tags .tag {
+  display: inline-block;
+  padding: 3px 8px;
+  background: #e8f4ff;
+  border-radius: 5px;
+  margin-right: 5px;
+}
