@@ -1,15 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>test-comment</title>
-    <url>/2025/03/23/test-comment/</url>
-    <content><![CDATA[<h2 id="评论测试贴"><a href="#评论测试贴" class="headerlink" title="评论测试贴"></a>评论测试贴</h2><p>看到后胡诌两句吧！</p>
-]]></content>
-      <categories>
-        <category>测试</category>
-      </categories>
-  </entry>
-  <entry>
     <title>Hello World</title>
     <url>/2025/03/18/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -26,6 +17,24 @@
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>test-comment</title>
+    <url>/2025/03/23/test-comment/</url>
+    <content><![CDATA[<h2 id="评论测试贴"><a href="#评论测试贴" class="headerlink" title="评论测试贴"></a>评论测试贴</h2><p>看到后胡诌两句吧！</p>
+]]></content>
+      <categories>
+        <category>测试</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Diary Test</title>
+    <url>/2025/09/13/test/</url>
+    <content><![CDATA[<p>This is a test post for diary category.</p>
+]]></content>
+      <categories>
+        <category>diary</category>
+      </categories>
   </entry>
   <entry>
     <title>占位测试1</title>
@@ -47,7 +56,7 @@
 <p>可能用来写我记忆最深的三家干挑店</p>
 ]]></content>
       <categories>
-        <category>回忆</category>
+        <category>diary</category>
       </categories>
       <tags>
         <tag>相册</tag>
