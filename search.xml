@@ -4,11 +4,11 @@
   
     
     <entry>
-      <title>Diary Test</title>
+      <title>Comment Test</title>
       <link href="/2025/09/13/test/"/>
       <url>/2025/09/13/test/</url>
       
-        <content type="html"><![CDATA[<p>This is a test post for diary category.</p><div id="vcomments" style="margin-top: 50px;"></div><script src="https://unpkg.com/valine/dist/Valine.min.js"></script><script>  document.addEventListener('DOMContentLoaded', function(){    // 获取本地存储的昵称    var localNick = localStorage.getItem('valine_nick');    new Valine({      el: '#vcomments',      appId: 'QftUzSBROkNZF8mA2ueuZ3UF-MdYXbMMI',      appKey: '78C3Z7toaoJeOTeHqXCScOGP',      serverURLs: 'https://qftuzsbr.api.lncldglobal.com',      placeholder: '留下点什么吧~',      avatar: 'monsterid',      pageSize: 10,      recordIP: true,      visitor: true,      enableMail: true,     // 邮箱可选      enableURL: false,     // 隐藏网址      verify: ['nick'],     // 昵称必填      notify: true,      path: window.location.pathname,      // 绑定提交前事件，保存昵称到 localStorage      beforeSubmit: function(comment){        if(comment && comment.nick){          localStorage.setItem('valine_nick', comment.nick);        }      },      // 如果本地有昵称，直接填入      avatar: 'monsterid',      meta: ['nick', 'mail'],      placeholder: '留下点什么吧~',      visitor: true,      el: '#vcomments',      // 初始化时填入昵称      nickname: localNick || ''    });  });</script>    ]]></content>
+        <content type="html"><![CDATA[<p>This is a test post for free comment.</p><div id="vcomments" style="margin-top: 50px;"></div><script src="https://unpkg.com/valine/dist/Valine.min.js"></script><script>  document.addEventListener('DOMContentLoaded', function(){    // 获取本地存储的昵称    var localNick = localStorage.getItem('valine_nick');    new Valine({      el: '#vcomments',      appId: 'QftUzSBROkNZF8mA2ueuZ3UF-MdYXbMMI',      appKey: '78C3Z7toaoJeOTeHqXCScOGP',      serverURLs: 'https://qftuzsbr.api.lncldglobal.com',      placeholder: '留下点什么吧~',      avatar: 'monsterid',      pageSize: 10,      recordIP: true,      visitor: true,      enableMail: true,     // 邮箱可选      enableURL: false,     // 隐藏网址      verify: ['nick'],     // 昵称必填      notify: true,      path: window.location.pathname,      // 绑定提交前事件，保存昵称到 localStorage      beforeSubmit: function(comment){        if(comment && comment.nick){          localStorage.setItem('valine_nick', comment.nick);        }      },      // 如果本地有昵称，直接填入      avatar: 'monsterid',      meta: ['nick', 'mail'],      placeholder: '留下点什么吧~',      visitor: true,      el: '#vcomments',      // 初始化时填入昵称      nickname: localNick || ''    });  });</script>    ]]></content>
       
       
       <categories>
