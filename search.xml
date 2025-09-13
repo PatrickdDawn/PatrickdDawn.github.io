@@ -1,112 +1,266 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search> 
-  
-  
-    
-    <entry>
-      <title>Comment Test</title>
-      <link href="/2025/09/13/test/"/>
-      <url>/2025/09/13/test/</url>
-      
-        <content type="html"><![CDATA[<p>This is a test post for free comment.</p><div id="vcomments" style="margin-top: 50px;"></div><script src="https://unpkg.com/valine/dist/Valine.min.js"></script><script>  document.addEventListener('DOMContentLoaded', function(){    // 获取本地存储的昵称    var localNick = localStorage.getItem('valine_nick');    new Valine({      el: '#vcomments',      appId: 'QftUzSBROkNZF8mA2ueuZ3UF-MdYXbMMI',      appKey: '78C3Z7toaoJeOTeHqXCScOGP',      serverURLs: 'https://qftuzsbr.api.lncldglobal.com',      placeholder: '留下点什么吧~',      avatar: 'monsterid',      pageSize: 10,      recordIP: true,      visitor: true,      enableMail: true,     // 邮箱可选      enableURL: false,     // 隐藏网址      verify: ['nick'],     // 昵称必填      notify: true,      path: window.location.pathname,      // 绑定提交前事件，保存昵称到 localStorage      beforeSubmit: function(comment){        if(comment && comment.nick){          localStorage.setItem('valine_nick', comment.nick);        }      },      // 如果本地有昵称，直接填入      avatar: 'monsterid',      meta: ['nick', 'mail'],      placeholder: '留下点什么吧~',      visitor: true,      el: '#vcomments',      // 初始化时填入昵称      nickname: localNick || ''    });  });</script>    ]]></content>
-      
-      
+<search>
+  <entry>
+    <title>Hello World</title>
+    <url>/2025/03/18/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+
+<div id="vcomments" style="margin-top: 50px;"></div>
+<script src="https://unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function(){
+    // 获取本地存储的昵称
+    var localNick = localStorage.getItem('valine_nick');
+
+    new Valine({
+      el: '#vcomments',
+      appId: 'QftUzSBROkNZF8mA2ueuZ3UF-MdYXbMMI',
+      appKey: '78C3Z7toaoJeOTeHqXCScOGP',
+      serverURLs: 'https://qftuzsbr.api.lncldglobal.com',
+      placeholder: '留下点什么吧~',
+      avatar: 'monsterid',
+      pageSize: 10,
+      recordIP: true,
+      visitor: true,
+      enableMail: true,     // 邮箱可选
+      enableURL: false,     // 隐藏网址
+      verify: ['nick'],     // 昵称必填
+      notify: true,
+      path: window.location.pathname,
+      // 绑定提交前事件，保存昵称到 localStorage
+      beforeSubmit: function(comment){
+        if(comment && comment.nick){
+          localStorage.setItem('valine_nick', comment.nick);
+        }
+      },
+      // 如果本地有昵称，直接填入
+      avatar: 'monsterid',
+      meta: ['nick', 'mail'],
+      placeholder: '留下点什么吧~',
+      visitor: true,
+      el: '#vcomments',
+      // 初始化时填入昵称
+      nickname: localNick || ''
+    });
+  });
+</script>
+    ]]></content>
+  </entry>
+  <entry>
+    <title>test-comment</title>
+    <url>/2025/03/23/test-comment/</url>
+    <content><![CDATA[<h2 id="评论测试贴"><a href="#评论测试贴" class="headerlink" title="评论测试贴"></a>评论测试贴</h2><p>看到后胡诌两句吧！</p>
+
+<div id="vcomments" style="margin-top: 50px;"></div>
+<script src="https://unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function(){
+    // 获取本地存储的昵称
+    var localNick = localStorage.getItem('valine_nick');
+
+    new Valine({
+      el: '#vcomments',
+      appId: 'QftUzSBROkNZF8mA2ueuZ3UF-MdYXbMMI',
+      appKey: '78C3Z7toaoJeOTeHqXCScOGP',
+      serverURLs: 'https://qftuzsbr.api.lncldglobal.com',
+      placeholder: '留下点什么吧~',
+      avatar: 'monsterid',
+      pageSize: 10,
+      recordIP: true,
+      visitor: true,
+      enableMail: true,     // 邮箱可选
+      enableURL: false,     // 隐藏网址
+      verify: ['nick'],     // 昵称必填
+      notify: true,
+      path: window.location.pathname,
+      // 绑定提交前事件，保存昵称到 localStorage
+      beforeSubmit: function(comment){
+        if(comment && comment.nick){
+          localStorage.setItem('valine_nick', comment.nick);
+        }
+      },
+      // 如果本地有昵称，直接填入
+      avatar: 'monsterid',
+      meta: ['nick', 'mail'],
+      placeholder: '留下点什么吧~',
+      visitor: true,
+      el: '#vcomments',
+      // 初始化时填入昵称
+      nickname: localNick || ''
+    });
+  });
+</script>
+    ]]></content>
       <categories>
-          
-          <category> diary </category>
-          
+        <category>测试</category>
       </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>test-comment</title>
-      <link href="/2025/03/23/test-comment/"/>
-      <url>/2025/03/23/test-comment/</url>
-      
-        <content type="html"><![CDATA[<h2 id="评论测试贴"><a href="#评论测试贴" class="headerlink" title="评论测试贴"></a>评论测试贴</h2><p>看到后胡诌两句吧！</p><div id="vcomments" style="margin-top: 50px;"></div><script src="https://unpkg.com/valine/dist/Valine.min.js"></script><script>  document.addEventListener('DOMContentLoaded', function(){    // 获取本地存储的昵称    var localNick = localStorage.getItem('valine_nick');    new Valine({      el: '#vcomments',      appId: 'QftUzSBROkNZF8mA2ueuZ3UF-MdYXbMMI',      appKey: '78C3Z7toaoJeOTeHqXCScOGP',      serverURLs: 'https://qftuzsbr.api.lncldglobal.com',      placeholder: '留下点什么吧~',      avatar: 'monsterid',      pageSize: 10,      recordIP: true,      visitor: true,      enableMail: true,     // 邮箱可选      enableURL: false,     // 隐藏网址      verify: ['nick'],     // 昵称必填      notify: true,      path: window.location.pathname,      // 绑定提交前事件，保存昵称到 localStorage      beforeSubmit: function(comment){        if(comment && comment.nick){          localStorage.setItem('valine_nick', comment.nick);        }      },      // 如果本地有昵称，直接填入      avatar: 'monsterid',      meta: ['nick', 'mail'],      placeholder: '留下点什么吧~',      visitor: true,      el: '#vcomments',      // 初始化时填入昵称      nickname: localNick || ''    });  });</script>    ]]></content>
-      
-      
+  </entry>
+  <entry>
+    <title>六月不到十天，被淋不下四次</title>
+    <url>/2025/06/09/%E6%B5%8B%E8%AF%951/</url>
+    <content><![CDATA[<h2 id="六月不到十天，被淋不下四次"><a href="#六月不到十天，被淋不下四次" class="headerlink" title="六月不到十天，被淋不下四次"></a>六月不到十天，被淋不下四次</h2><h3 id="6-1-杭州-午夜"><a href="#6-1-杭州-午夜" class="headerlink" title="6.1 杭州 午夜"></a>6.1 杭州 午夜</h3><p>晚上十一点多抵达杭州，比预想的快了半个小时，一开始打算是在机场直接过夜，因为第二天是早上八点的飞机。但航班临时取消，改到下午，所以我第一次在抵达后才订酒店，打给接机电话说需要到T4航站楼等候，于是我就和一旁的路人静静看着暴雨从头顶延伸出十多米的楼顶流下，给六月亚热带季风气侯区的杭州带来很多凉意。<br><img src="/images/post/RainHZ1.png" alt="杭州萧山到达层航站楼前"></p>
+<h3 id="6-2-曼谷-黄昏前"><a href="#6-2-曼谷-黄昏前" class="headerlink" title="6.2 曼谷 黄昏前"></a>6.2 曼谷 黄昏前</h3><p>看完一场歌剧从大皇宫走向唐人街的路上，我百无聊赖边看导航边刷手机，走到一座平桥上时骤然下起暴雨，还好我事先带了伞——这也是我第一次出去玩带伞——所以并没有太惊慌，又刚好目睹了一辆疾速驶过的摩托打滑翻车的过程，车摔少了一些小零件，不过那人也没有雨具，扶好车后以比之前慢一点的速度开走了。<br><img src="/images/post/RainBK2.png" alt="曼谷街道"><br>我走过桥后在街角等了大概七分钟，虽然有伞但雨的确是太大了。之后不知道怎么走进了一长串一大片特别典型的东南亚市井街区，暴雨下被许多大棚压成黑呜呜的间或漏出一些手电筒的光，没有泥巴也给人一种泥泞的感觉。<br><img src="/images/post/RainBK3.png" alt="曼谷小巷"></p>
+<h3 id="6-4-澳门-下午"><a href="#6-4-澳门-下午" class="headerlink" title="6.4 澳门 下午"></a>6.4 澳门 下午</h3><p>当时决定前已经下起了小雨，但我有足足五六个小时的中转时间，不可能窝在澳门那个小小的机场。于是我换乘两趟发财车后到达新葡京，雨下的已经不小了。找准大三巴打卡地后就一手打伞一手拖着小行李箱偶尔看下导航出发了，开始还挺顺利，到达大三巴脚下后雨大了起来，我不知所措。该吃饭了，我打伞伫立了十多分钟，终于在小红书上找到一家本地小众又不远的门店，然后就迎着暴雨出发了，很大的暴雨。到达餐馆时是三点多，我怀着歉意问了句还有餐吗得到肯定回复后就收伞进入了。饱餐一顿后就准备又迎着暴雨赶路，老板老板娘还特别诧异问怎么不再躲躲雨就要出门，得知我要赶飞机也是非常惋惜，哈哈哈。从餐馆走回新葡京距离感觉短了不少，但离终点越近雨越大，在最后一个红绿灯前我身后的书包和无法顾及的行李箱都已经湿透了。<br><img src="/images/post/RainMA4.png" alt="澳门新葡京前"></p>
+<h3 id="6-9-大连-黄昏后"><a href="#6-9-大连-黄昏后" class="headerlink" title="6.9 大连 黄昏后"></a>6.9 大连 黄昏后</h3><p>今天预约了麦当劳一个所谓的联名套餐，在图书馆学了半个下午后美滋滋地赶过去，天已经很阴了但我并没多想，因为正常来说大连下雨很少，有也不多。吃完后出门果然印证了我的猜想，开始下麻麻雨了，于是我不再停留快马加鞭准备返回学校，走出不到两百米开始下大，我加快脚步，雨加大程度，最后是我妥协，找到一处屋檐等了十多分钟却不见颓势，我没有办法，但也没有身外之物，于是就迎着雨继续走，途中步道已成小溪，全身湿透不必赘述。图书馆前横贯一条小河，我没开玩笑，比我脚脖子还高不少，但我电脑书包还在里面，只能狼狈渡过。最后也是趁雨病要它命在又淋了不少后终于回寝了。<br><img src="/images/post/RainDL5.png" alt="大连第四人民医院前"></p>
+
+<div id="vcomments" style="margin-top: 50px;"></div>
+<script src="https://unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function(){
+    // 获取本地存储的昵称
+    var localNick = localStorage.getItem('valine_nick');
+
+    new Valine({
+      el: '#vcomments',
+      appId: 'QftUzSBROkNZF8mA2ueuZ3UF-MdYXbMMI',
+      appKey: '78C3Z7toaoJeOTeHqXCScOGP',
+      serverURLs: 'https://qftuzsbr.api.lncldglobal.com',
+      placeholder: '留下点什么吧~',
+      avatar: 'monsterid',
+      pageSize: 10,
+      recordIP: true,
+      visitor: true,
+      enableMail: true,     // 邮箱可选
+      enableURL: false,     // 隐藏网址
+      verify: ['nick'],     // 昵称必填
+      notify: true,
+      path: window.location.pathname,
+      // 绑定提交前事件，保存昵称到 localStorage
+      beforeSubmit: function(comment){
+        if(comment && comment.nick){
+          localStorage.setItem('valine_nick', comment.nick);
+        }
+      },
+      // 如果本地有昵称，直接填入
+      avatar: 'monsterid',
+      meta: ['nick', 'mail'],
+      placeholder: '留下点什么吧~',
+      visitor: true,
+      el: '#vcomments',
+      // 初始化时填入昵称
+      nickname: localNick || ''
+    });
+  });
+</script>
+    ]]></content>
       <categories>
-          
-          <category> 测试 </category>
-          
+        <category>随笔</category>
+        <category>游记</category>
       </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>三碗干挑</title>
-      <link href="/2025/03/21/%E6%B5%8B%E8%AF%952/"/>
-      <url>/2025/03/21/%E6%B5%8B%E8%AF%952/</url>
-      
-        <content type="html"><![CDATA[<h2 id="如你所见"><a href="#如你所见" class="headerlink" title="如你所见"></a>如你所见</h2><p>其实这是第二篇</p><p>可能用来写我记忆最深的三家干挑店</p><div id="vcomments" style="margin-top: 50px;"></div><script src="https://unpkg.com/valine/dist/Valine.min.js"></script><script>  document.addEventListener('DOMContentLoaded', function(){    // 获取本地存储的昵称    var localNick = localStorage.getItem('valine_nick');    new Valine({      el: '#vcomments',      appId: 'QftUzSBROkNZF8mA2ueuZ3UF-MdYXbMMI',      appKey: '78C3Z7toaoJeOTeHqXCScOGP',      serverURLs: 'https://qftuzsbr.api.lncldglobal.com',      placeholder: '留下点什么吧~',      avatar: 'monsterid',      pageSize: 10,      recordIP: true,      visitor: true,      enableMail: true,     // 邮箱可选      enableURL: false,     // 隐藏网址      verify: ['nick'],     // 昵称必填      notify: true,      path: window.location.pathname,      // 绑定提交前事件，保存昵称到 localStorage      beforeSubmit: function(comment){        if(comment && comment.nick){          localStorage.setItem('valine_nick', comment.nick);        }      },      // 如果本地有昵称，直接填入      avatar: 'monsterid',      meta: ['nick', 'mail'],      placeholder: '留下点什么吧~',      visitor: true,      el: '#vcomments',      // 初始化时填入昵称      nickname: localNick || ''    });  });</script>    ]]></content>
-      
-      
+  </entry>
+  <entry>
+    <title>三碗干挑</title>
+    <url>/2025/03/21/%E6%B5%8B%E8%AF%952/</url>
+    <content><![CDATA[<h2 id="如你所见"><a href="#如你所见" class="headerlink" title="如你所见"></a>如你所见</h2><p>其实这是第二篇</p>
+<p>可能用来写我记忆最深的三家干挑店</p>
+
+<div id="vcomments" style="margin-top: 50px;"></div>
+<script src="https://unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function(){
+    // 获取本地存储的昵称
+    var localNick = localStorage.getItem('valine_nick');
+
+    new Valine({
+      el: '#vcomments',
+      appId: 'QftUzSBROkNZF8mA2ueuZ3UF-MdYXbMMI',
+      appKey: '78C3Z7toaoJeOTeHqXCScOGP',
+      serverURLs: 'https://qftuzsbr.api.lncldglobal.com',
+      placeholder: '留下点什么吧~',
+      avatar: 'monsterid',
+      pageSize: 10,
+      recordIP: true,
+      visitor: true,
+      enableMail: true,     // 邮箱可选
+      enableURL: false,     // 隐藏网址
+      verify: ['nick'],     // 昵称必填
+      notify: true,
+      path: window.location.pathname,
+      // 绑定提交前事件，保存昵称到 localStorage
+      beforeSubmit: function(comment){
+        if(comment && comment.nick){
+          localStorage.setItem('valine_nick', comment.nick);
+        }
+      },
+      // 如果本地有昵称，直接填入
+      avatar: 'monsterid',
+      meta: ['nick', 'mail'],
+      placeholder: '留下点什么吧~',
+      visitor: true,
+      el: '#vcomments',
+      // 初始化时填入昵称
+      nickname: localNick || ''
+    });
+  });
+</script>
+    ]]></content>
       <categories>
-          
-          <category> diary </category>
-          
+        <category>diary</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> 相册 </tag>
-            
-            <tag> 旅游 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>占位测试1</title>
-      <link href="/2025/03/21/%E6%B5%8B%E8%AF%951/"/>
-      <url>/2025/03/21/%E6%B5%8B%E8%AF%951/</url>
-      
-        <content type="html"><![CDATA[<h2 id="欢迎来到我的博客！"><a href="#欢迎来到我的博客！" class="headerlink" title="欢迎来到我的博客！"></a>欢迎来到我的博客！</h2><p>这是使用 Hexo 写的第一篇文章，以下是一些常用 Markdown 示例：</p><h3 id="代码块演示"><a href="#代码块演示" class="headerlink" title="代码块演示"></a>代码块演示</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="string">&quot;Hello, Hexo!&quot;</span>)</span><br></pre></td></tr></table></figure><div id="vcomments" style="margin-top: 50px;"></div><script src="https://unpkg.com/valine/dist/Valine.min.js"></script><script>  document.addEventListener('DOMContentLoaded', function(){    // 获取本地存储的昵称    var localNick = localStorage.getItem('valine_nick');    new Valine({      el: '#vcomments',      appId: 'QftUzSBROkNZF8mA2ueuZ3UF-MdYXbMMI',      appKey: '78C3Z7toaoJeOTeHqXCScOGP',      serverURLs: 'https://qftuzsbr.api.lncldglobal.com',      placeholder: '留下点什么吧~',      avatar: 'monsterid',      pageSize: 10,      recordIP: true,      visitor: true,      enableMail: true,     // 邮箱可选      enableURL: false,     // 隐藏网址      verify: ['nick'],     // 昵称必填      notify: true,      path: window.location.pathname,      // 绑定提交前事件，保存昵称到 localStorage      beforeSubmit: function(comment){        if(comment && comment.nick){          localStorage.setItem('valine_nick', comment.nick);        }      },      // 如果本地有昵称，直接填入      avatar: 'monsterid',      meta: ['nick', 'mail'],      placeholder: '留下点什么吧~',      visitor: true,      el: '#vcomments',      // 初始化时填入昵称      nickname: localNick || ''    });  });</script>    ]]></content>
-      
-      
+      <tags>
+        <tag>相册</tag>
+        <tag>旅游</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Comment Test</title>
+    <url>/2025/09/13/test/</url>
+    <content><![CDATA[<p>This is a test post for free comment.</p>
+
+<div id="vcomments" style="margin-top: 50px;"></div>
+<script src="https://unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function(){
+    // 获取本地存储的昵称
+    var localNick = localStorage.getItem('valine_nick');
+
+    new Valine({
+      el: '#vcomments',
+      appId: 'QftUzSBROkNZF8mA2ueuZ3UF-MdYXbMMI',
+      appKey: '78C3Z7toaoJeOTeHqXCScOGP',
+      serverURLs: 'https://qftuzsbr.api.lncldglobal.com',
+      placeholder: '留下点什么吧~',
+      avatar: 'monsterid',
+      pageSize: 10,
+      recordIP: true,
+      visitor: true,
+      enableMail: true,     // 邮箱可选
+      enableURL: false,     // 隐藏网址
+      verify: ['nick'],     // 昵称必填
+      notify: true,
+      path: window.location.pathname,
+      // 绑定提交前事件，保存昵称到 localStorage
+      beforeSubmit: function(comment){
+        if(comment && comment.nick){
+          localStorage.setItem('valine_nick', comment.nick);
+        }
+      },
+      // 如果本地有昵称，直接填入
+      avatar: 'monsterid',
+      meta: ['nick', 'mail'],
+      placeholder: '留下点什么吧~',
+      visitor: true,
+      el: '#vcomments',
+      // 初始化时填入昵称
+      nickname: localNick || ''
+    });
+  });
+</script>
+    ]]></content>
       <categories>
-          
-          <category> 杂谈 </category>
-          
+        <category>diary</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> 入门 </tag>
-            
-            <tag> 标签1 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Hello World</title>
-      <link href="/2025/03/18/hello-world/"/>
-      <url>/2025/03/18/hello-world/</url>
-      
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p><div id="vcomments" style="margin-top: 50px;"></div><script src="https://unpkg.com/valine/dist/Valine.min.js"></script><script>  document.addEventListener('DOMContentLoaded', function(){    // 获取本地存储的昵称    var localNick = localStorage.getItem('valine_nick');    new Valine({      el: '#vcomments',      appId: 'QftUzSBROkNZF8mA2ueuZ3UF-MdYXbMMI',      appKey: '78C3Z7toaoJeOTeHqXCScOGP',      serverURLs: 'https://qftuzsbr.api.lncldglobal.com',      placeholder: '留下点什么吧~',      avatar: 'monsterid',      pageSize: 10,      recordIP: true,      visitor: true,      enableMail: true,     // 邮箱可选      enableURL: false,     // 隐藏网址      verify: ['nick'],     // 昵称必填      notify: true,      path: window.location.pathname,      // 绑定提交前事件，保存昵称到 localStorage      beforeSubmit: function(comment){        if(comment && comment.nick){          localStorage.setItem('valine_nick', comment.nick);        }      },      // 如果本地有昵称，直接填入      avatar: 'monsterid',      meta: ['nick', 'mail'],      placeholder: '留下点什么吧~',      visitor: true,      el: '#vcomments',      // 初始化时填入昵称      nickname: localNick || ''    });  });</script>    ]]></content>
-      
-      
-      
-    </entry>
-    
-    
-  
-  
+  </entry>
 </search>
